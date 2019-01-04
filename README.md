@@ -1,5 +1,5 @@
 # Corey Curse Web Portal
-A static web portal hosted at [coreycurse.com] to make it easier for the Corey family to connect and communicate.
+A static web portal hosted at [coreycurse.com](http://coreycurse.com) to make it easier for the Corey family to connect and communicate.
 
 ### Implementation
 The web portal is implemented using a light weight css framework [W3.CSS](https://www.w3schools.com/w3css/default.asp) and is hosted on an Amazon S3 bucket.
