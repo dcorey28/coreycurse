@@ -31,54 +31,54 @@
 
 <body class="w3-black">
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-teal w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvj8Pamv7XlXlzkTEqYF4VF18by2p7ANAWboroQUimCmaZbg/viewform?usp=sf_link" class="w3-bar-item w3-button w3-padding-large w3-hover-green">REQUEST A SLACK INVITE</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button w3-hover-green" title="Help">HELP <i class="fa fa-caret-down"></i></button>     
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="https://get.slack.help/hc/en-us/articles/218080037-Getting-started-for-new-members" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-green w3-teal">SETTING UP SLACK</a>
-            <a href="https://youtu.be/dJmdHowChWk" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-green w3-teal">SLACK TUTORIALS</a>        
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-teal w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvj8Pamv7XlXlzkTEqYF4VF18by2p7ANAWboroQUimCmaZbg/viewform?usp=sf_link" class="w3-bar-item w3-button w3-padding-large w3-hover-green">REQUEST A SLACK INVITE</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-padding-large w3-button w3-hover-green" title="Help">HELP <i class="fa fa-caret-down"></i></button>     
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+              <a href="https://get.slack.help/hc/en-us/articles/218080037-Getting-started-for-new-members" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-green w3-teal">SETTING UP SLACK</a>
+              <a href="https://youtu.be/dJmdHowChWk" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-green w3-teal">SLACK TUTORIALS</a>        
+          </div>
         </div>
-      </div>
-  </div>
-</div>
-
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-pale-blue w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="https://get.slack.help/hc/en-us/articles/218080037-Getting-started-for-new-members" class="w3-bar-item w3-button w3-padding-large w3-hover-green">SETTING UP SLACK</a>
-  <a href="https://youtu.be/dJmdHowChWk" class="w3-bar-item w3-button w3-padding-large w3-hover-green">SLACK TUTORIALS</a>
-</div>
-
-<!-- Page content -->
-<div class="w3-content" style="min-width:100%;min-height:100%;;margin-top:46px">
-
-  <!-- Main Link Images -->
-  <div class="w3-display-container w3-center">
-  	<a href="https://coreycurse.slack.com">
-    	<img src="img/slack.png" style="max-width:100%" class="link-icon">
-    </a>
-  </div>
-  
-  <div class="w3-display-container w3-center">
-  	<a href="https://www.facebook.com/groups/815645975220435/">
-    	<img src="img/facebook.png" style="max-width:60%" class="link-icon">
-    </a>
+    </div>
   </div>
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-pale-blue w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="https://get.slack.help/hc/en-us/articles/218080037-Getting-started-for-new-members" class="w3-bar-item w3-button w3-padding-large w3-hover-green">SETTING UP SLACK</a>
+    <a href="https://youtu.be/dJmdHowChWk" class="w3-bar-item w3-button w3-padding-large w3-hover-green">SLACK TUTORIALS</a>
+  </div>
+
+  <!-- Page content -->
+  <div class="w3-content" style="min-width:100%;min-height:100%;;margin-top:46px">
+
+    <!-- Main Link Images -->
+    <div class="w3-display-container w3-center">
+      <a href="https://coreycurse.slack.com">
+        <img src="img/slack.png" style="max-width:100%" class="link-icon">
+      </a>
+    </div>
+    
+    <div class="w3-display-container w3-center">
+      <a href="https://www.facebook.com/groups/815645975220435/">
+        <img src="img/facebook.png" style="max-width:60%" class="link-icon">
+      </a>
+    </div>
+
+  <script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
   }
-}
-</script>
+  </script>
 
 </body>
 </html>
