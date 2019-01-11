@@ -64,12 +64,20 @@
       font-size:3em;
     }
 
+    .video-container {
+      position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin-bottom: 50px;
+    }
+
     iframe {
-      width: 70vw;
-      height: 39.375vw;
-      /* 100/56.25 = 560/315 = 1.778 */
-      margin-top: 30px;
-      margin-bottom: 50px;
+      position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     }
   </style>
 </head>
@@ -79,12 +87,16 @@
   <!-- Slack Portal -->
   <div class="w3-display-container" style="height:100vh">
     <!-- Title -->
-    <div class="w3-bar w3-teal w3-card w3-display-topmiddle">
+    <div class="w3-bar w3-teal w3-card w3-display-topmiddle w3-hide-small">
       <h1 class="w3-center">COREY HUB</h1>
     </div>
 
+    <div class="w3-bar w3-teal w3-card w3-display-topmiddle w3-hide-medium w3-hide-large">
+        <h2 class="w3-center">COREY HUB</h2>
+      </div>
+
     <!-- Slack Card -->
-    <div class="w3-card-2 w3-round-small w3-white w3-display-middle w3-text-grey w3-center w3-padding-large"
+    <div class="w3-card-2 w3-round-small w3-white w3-display-middle w3-text-grey w3-center w3-padding-large w3-mobile"
       id="main-modal">
       <h2 class="card-heading">Go To Corey Slack Group</h2>
       <a href="https://coreycurse.slack.com">
@@ -92,7 +104,7 @@
           <img src="img/slack.png" style="max-width:225px; padding:0px; margin:0px;">
         </button>
       </a>
-      <p class="w3-center">
+      <p class="w3-center" style="font-size:1.2em">
         Don't have an account?<br />
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvj8Pamv7XlXlzkTEqYF4VF18by2p7ANAWboroQUimCmaZbg/viewform?usp=sf_link"
           class="w3-text-teal w3-hover-text-green">
@@ -101,18 +113,19 @@
       </p>
     </div>
 
-    <!-- Tutorial -->
-    <div class="w3-display-bottommiddle w3-padding-large w3-center w3-text-teal w3-hover-text-green">
+    <!-- Tutorial Link -->
+    <div class="w3-display-bottommiddle w3-padding-large w3-center w3-text-teal w3-hover-text-green w3-hide-small">
       <a href="#tutorial-title" target="_self">
-        ▼ <span style="font-size: 1.5em;">Get Set Up</span> ▼
+        <span style="font-size: 1.6em;">Get Set Up</span><br/>▼
       </a>
     </div>
   </div>
 
-  <div class="w3-container w3-dark-grey w3-center">
+  <!-- Tutorial -->
+  <div class="w3-container w3-dark-grey w3-center" style="min-height:50vh">
     <h2 id="tutorial-title">Get Set Up</h2>
-    <div>
-      <iframe src="https://www.youtube-nocookie.com/embed/dJmdHowChWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    <div class="video-container">
+      <iframe class="w3-mobile" src="https://www.youtube-nocookie.com/embed/dJmdHowChWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </div>
   </div>
