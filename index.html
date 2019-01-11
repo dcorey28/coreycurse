@@ -6,7 +6,7 @@
   <!-- Open Links in New Tab by Default-->
   <base target="_blank">
 
-  <!-- Icon -->
+  <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -21,64 +21,102 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900" rel="stylesheet">
   <style>
-  body {font-family: "Lato", sans-serif; height: 100%}
-  .link-icon {opacity: 0.6}
-  .link-icon:hover {opacity: 1}
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    .link-icon {
+      opacity: 0.6
+    }
+
+    .link-icon:hover {
+      opacity: 1
+    }
+
+    h1 {
+      font-size: 4em;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700
+    }
+
+    #main-modal {
+      min-width: 45%
+    }
+
+    a {
+      text-decoration: none
+    }
+
+    #tutorial-title {
+      font-size: 3em;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      margin-top: 30px;
+    }
+
+    .card-heading {
+      font-size:3em;
+    }
+
+    iframe {
+      width: 70vw;
+      height: 39.375vw;
+      /* 100/56.25 = 560/315 = 1.778 */
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
   </style>
 </head>
 
+<body class="w3-light-gray w3-text-grey">
 
-<body class="w3-black">
-
-  <!-- Navbar -->
-  <div class="w3-top">
-    <div class="w3-bar w3-teal w3-card">
-      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvj8Pamv7XlXlzkTEqYF4VF18by2p7ANAWboroQUimCmaZbg/viewform?usp=sf_link" class="w3-bar-item w3-button w3-padding-large w3-hover-green">REQUEST A SLACK INVITE</a>
-      <div class="w3-dropdown-hover w3-hide-small">
-          <button class="w3-padding-large w3-button w3-hover-green" title="Help">HELP <i class="fa fa-caret-down"></i></button>     
-          <div class="w3-dropdown-content w3-bar-block w3-card-4">
-              <a href="https://get.slack.help/hc/en-us/articles/218080037-Getting-started-for-new-members" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-green w3-teal">SETTING UP SLACK</a>
-              <a href="https://youtu.be/dJmdHowChWk" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-green w3-teal">SLACK TUTORIALS</a>        
-          </div>
-        </div>
+  <!-- Slack Portal -->
+  <div class="w3-display-container" style="height:100vh">
+    <!-- Title -->
+    <div class="w3-bar w3-teal w3-card w3-display-topmiddle">
+      <h1 class="w3-center">COREY HUB</h1>
     </div>
-  </div>
 
-  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-  <div id="navDemo" class="w3-bar-block w3-pale-blue w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-    <a href="https://get.slack.help/hc/en-us/articles/218080037-Getting-started-for-new-members" class="w3-bar-item w3-button w3-padding-large w3-hover-green">SETTING UP SLACK</a>
-    <a href="https://youtu.be/dJmdHowChWk" class="w3-bar-item w3-button w3-padding-large w3-hover-green">SLACK TUTORIALS</a>
-  </div>
-
-  <!-- Page content -->
-  <div class="w3-content" style="min-width:100%;min-height:100%;;margin-top:46px">
-
-    <!-- Main Link Images -->
-    <div class="w3-display-container w3-center">
+    <!-- Slack Card -->
+    <div class="w3-card-2 w3-round-small w3-white w3-display-middle w3-text-grey w3-center w3-padding-large"
+      id="main-modal">
+      <h2 class="card-heading">Go To Corey Slack Group</h2>
       <a href="https://coreycurse.slack.com">
-        <img src="img/slack.png" style="max-width:100%" class="link-icon">
+        <button class="w3-button w3-hover-green w3-round-xlarge w3-teal w3-xxlarge">
+          <img src="img/slack.png" style="max-width:225px; padding:0px; margin:0px;">
+        </button>
       </a>
-    </div>
-    
-    <div class="w3-display-container w3-center">
-      <a href="https://www.facebook.com/groups/815645975220435/">
-        <img src="img/facebook.png" style="max-width:60%" class="link-icon">
-      </a>
+      <p class="w3-center">
+        Don't have an account?<br />
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvj8Pamv7XlXlzkTEqYF4VF18by2p7ANAWboroQUimCmaZbg/viewform?usp=sf_link"
+          class="w3-text-teal w3-hover-text-green">
+          Request an Invite
+        </a>
+      </p>
     </div>
 
-  <script>
-  // Used to toggle the menu on small screens when clicking on the menu button
-  function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-    } else { 
-      x.className = x.className.replace(" w3-show", "");
-    }
-  }
-  </script>
+    <!-- Tutorial -->
+    <div class="w3-display-bottommiddle w3-padding-large w3-center w3-text-teal w3-hover-text-green">
+      <a href="#tutorial-title" target="_self">
+        ▼ <span style="font-size: 1.5em;">Get Set Up</span> ▼
+      </a>
+    </div>
+  </div>
+
+  <div class="w3-container w3-dark-grey w3-center">
+    <h2 id="tutorial-title">Get Set Up</h2>
+    <div>
+      <iframe src="https://www.youtube-nocookie.com/embed/dJmdHowChWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
 
 </body>
+
 </html>
